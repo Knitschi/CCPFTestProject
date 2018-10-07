@@ -18,7 +18,7 @@ set( PACKAGE_PRODUCTION_FILES
 	function.cpp
 )
 
-set( PUBLIC_FIXTURE_HEADER
+set( PACKAGE_PUBLIC_FIXTURE_HEADER
 	fixture.h
 )
 

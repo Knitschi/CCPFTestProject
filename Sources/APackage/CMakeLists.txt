@@ -18,7 +18,7 @@ set( PACKAGE_PRODUCTION_FILES
 	function.cpp
 )
 
-set( PACKAGE_PUBLIC_HEADER 
+set( PACKAGE_PUBLIC_HEADER
 	function.h
 )
 

@@ -10,7 +10,6 @@ cpfInit()
 set( externalPackages
 	CPFCMake
 	CPFBuildscripts
-	CIBuildConfigurations
 )
 
 set( globalFiles

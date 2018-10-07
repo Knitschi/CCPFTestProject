@@ -1,7 +1,7 @@
 
 #include <APackage/function.h>
 
-int main(int argc, char **argv)
+int main()
 {
     a::function();
     return 0;

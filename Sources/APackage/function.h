@@ -1,6 +1,8 @@
 #pragma once
 
+#include <APackage/a_export.h>
+
 namespace a
 {
-    void function();
+    A_EXPORT void function();
 }

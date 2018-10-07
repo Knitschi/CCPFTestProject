@@ -1,0 +1,6 @@
+/**
+\mainpage The CCPFTestProject CI-Project
+
+This project is used by the automated tests of the <a href="https://github.com/Knitschi/CMakeProjectFramework">CMakeProjectFramework</a> to test the creation of distribution packages.
+
+*/

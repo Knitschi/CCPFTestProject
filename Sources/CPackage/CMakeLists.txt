@@ -1,0 +1,31 @@
+
+include(cpfAddPackage)
+
+set( PACKAGE_NAMESPACE c )
+cpfInitPackageProject(
+	PACKAGE_NAME
+	${PACKAGE_NAMESPACE}
+)
+set( briefDescription "A C++ libary used for testing the CPF" )
+set( longDescription "A long description of the CPackage." )
+
+
+set( PACKAGE_PUBLIC_HEADER
+	function.h
+)
+
+set( PACKAGE_PRODUCTION_FILES
+	function.cpp
+)
+
+
+############################################## Add Package #################################
+cpfAddPackage( 
+	PACKAGE_NAME			${PACKAGE_NAME}
+	PACKAGE_NAMESPACE		${PACKAGE_NAMESPACE}
+	TYPE					LIB
+	BRIEF_DESCRIPTION		${briefDescription}
+	LONG_DESCRIPTION		${longDescription}
+	PUBLIC_HEADER			${PACKAGE_PUBLIC_HEADER}
+	PRODUCTION_FILES		${PACKAGE_PRODUCTION_FILES}
+)

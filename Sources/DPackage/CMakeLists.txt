@@ -1,13 +1,13 @@
 
 include(cpfAddPackage)
 
-set( PACKAGE_NAMESPACE c )
+set( PACKAGE_NAMESPACE d )
 cpfInitPackageProject(
 	PACKAGE_NAME
 	${PACKAGE_NAMESPACE}
 )
 set( briefDescription "A C++ libary used for testing the CPF" )
-set( longDescription "A long description of the CPackage." )
+set( longDescription "A long description of the DPackage." )
 
 
 set( PACKAGE_PUBLIC_HEADER
@@ -18,6 +18,7 @@ set( PACKAGE_PRODUCTION_FILES
 	function.cpp
 )
 
+set(BUILD_SHARED_LIBS ON)
 
 ############################################## Add Package #################################
 cpfAddPackage( 

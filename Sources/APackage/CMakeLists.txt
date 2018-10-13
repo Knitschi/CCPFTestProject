@@ -1,4 +1,4 @@
-include(cpfAddPackage)
+include(cpfAddCppPackage)
 
 # define namespace name for module
 set( PACKAGE_NAMESPACE a )
@@ -61,7 +61,7 @@ set( pluginOptions
 )
 
 ############################################## Add Package #################################
-cpfAddPackage( 
+cpfAddCppPackage( 
 	PACKAGE_NAME								${PACKAGE_NAME}
 	PACKAGE_NAMESPACE							${PACKAGE_NAMESPACE}
 	TYPE										CONSOLE_APP

@@ -1,5 +1,5 @@
 
-include(cpfAddPackage)
+include(cpfAddCppPackage)
 
 set( PACKAGE_NAMESPACE b )
 cpfInitPackageProject(
@@ -46,7 +46,7 @@ set( distPackageOptions
 )
 
 ############################################## Add Package #################################
-cpfAddPackage( 
+cpfAddCppPackage( 
 	PACKAGE_NAME			${PACKAGE_NAME}
 	PACKAGE_NAMESPACE		${PACKAGE_NAMESPACE}
 	TYPE					LIB

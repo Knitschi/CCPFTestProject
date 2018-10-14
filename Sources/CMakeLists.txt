@@ -16,4 +16,4 @@ set( globalFiles
 	documentation/CCPFTestProjectDocs.dox
 )
 
-cpfAddCppPackages( "${externalPackages}" "${globalFiles}")
+cpfAddPackages( "${externalPackages}" "${globalFiles}")

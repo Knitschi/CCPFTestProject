@@ -13,6 +13,12 @@ cpfInitPackageProject(
 
 ############################################## Define code files ###################################################
 
+# Generate a file in a subdirectory to test if it is included correctly in the source package.
+set(sourcePath "${CMAKE_CURRENT_SOURCE_DIR}/Other/headerTemplate.h.in")
+set(destPath "${CMAKE_CURRENT_BINARY_DIR}/Tests/generatedHeader.h")
+set(MYNULL 0)
+configure_file( ${sourcePath} ${destPath})
+
 set( PACKAGE_PRODUCTION_FILES
 	main.cpp
 	function.cpp

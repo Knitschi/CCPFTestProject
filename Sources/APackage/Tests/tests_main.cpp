@@ -1,5 +1,5 @@
 #include <APackage/function.h>
-#include <APackage/fixture.h>
+#include <APackage/Tests/fixture.h>
 
 int main()
 {

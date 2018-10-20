@@ -19,15 +19,15 @@ set( PACKAGE_PRODUCTION_FILES
 )
 
 set( PACKAGE_PUBLIC_FIXTURE_HEADER
-	fixture.h
+	Tests/fixture.h
 )
 
 set( PACKAGE_FIXTURE_FILES
-	fixture.cpp
+	Tests/fixture.cpp
 )
 	
 set( PACKAGE_TEST_FILES
-	tests_main.cpp
+	Tests/tests_main.cpp
 )
 
 set( distPackageOptions

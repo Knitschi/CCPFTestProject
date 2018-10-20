@@ -1,4 +1,4 @@
-#include <BPackage/fixture.h>
+#include <BPackage/Tests/fixture.h>
 
 namespace b
 {

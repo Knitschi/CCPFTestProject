@@ -1,11 +1,9 @@
 
+include(cpfInitPackageProject)
 include(cpfAddCppPackage)
 
-set( PACKAGE_NAMESPACE c )
-cpfInitPackageProject(
-	PACKAGE_NAME
-	${PACKAGE_NAMESPACE}
-)
+cpfInitPackageProject()
+
 set( briefDescription "A C++ libary used for testing the CPF" )
 set( longDescription "A long description of the CPackage." )
 
@@ -21,8 +19,7 @@ set( PACKAGE_PRODUCTION_FILES
 
 ############################################## Add Package #################################
 cpfAddCppPackage( 
-	PACKAGE_NAME								${PACKAGE_NAME}
-	PACKAGE_NAMESPACE							${PACKAGE_NAMESPACE}
+	PACKAGE_NAMESPACE							c
 	TYPE										LIB
 	BRIEF_DESCRIPTION							${briefDescription}
 	LONG_DESCRIPTION							${longDescription}

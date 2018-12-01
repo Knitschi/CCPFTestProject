@@ -1,15 +1,12 @@
+
+include(cpfInitPackageProject)
 include(cpfAddCppPackage)
 
-# define namespace name for module
-set( PACKAGE_NAMESPACE a )
+cpfInitPackageProject()
 
 set( briefDescription "An empty C++ command line application used for testing the CPF." )
 set( longDescription "A long description of the APackage." )
 
-cpfInitPackageProject(
-	PACKAGE_NAME
-	${PACKAGE_NAMESPACE}
-)
 
 ############################################## Define code files ###################################################
 
@@ -69,8 +66,7 @@ set( pluginOptions
 
 ############################################## Add Package #################################
 cpfAddCppPackage( 
-	PACKAGE_NAME								${PACKAGE_NAME}
-	PACKAGE_NAMESPACE							${PACKAGE_NAMESPACE}
+	PACKAGE_NAMESPACE							a
 	TYPE										CONSOLE_APP
 	BRIEF_DESCRIPTION							${briefDescription}
 	LONG_DESCRIPTION							${longDescription}

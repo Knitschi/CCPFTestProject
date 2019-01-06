@@ -1,4 +1,4 @@
-#include <EPackage/fixture.h>
+#include <EPackage/Tests/fixture.h>
 #include <EPackage/function.h>
 
 int main(int, char**)

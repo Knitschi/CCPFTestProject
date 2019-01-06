@@ -21,7 +21,7 @@ set( PACKAGE_FIXTURE_FILES
 )
 	
 set( PACKAGE_TEST_FILES
-	Tests/test_main.cpp
+	Tests/tests_main.cpp
 )
 
 set( archiveDevPackageOptions

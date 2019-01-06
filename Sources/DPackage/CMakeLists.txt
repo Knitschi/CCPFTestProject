@@ -5,7 +5,7 @@ include(cpfAddCppPackage)
 cpfInitPackageProject()
 
 set( briefDescription "A C++ libary used for testing the CPF" )
-set( longDescription "A long description of the DPackage." )
+set( longDescription "This tests if we can have projects with mixed static and shared linkage." )
 
 
 set( PACKAGE_PUBLIC_HEADER

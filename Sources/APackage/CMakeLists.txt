@@ -42,6 +42,7 @@ set( PACKAGE_TEST_FILES
 set(PACKAGE_LINKED_LIBRARIES
 	BPackage
 	CPackage
+	EPackage
 )
 
 set( distPackageOptions

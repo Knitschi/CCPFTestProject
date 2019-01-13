@@ -31,7 +31,8 @@ set( archiveDevPackageOptions
 	DISTRIBUTION_PACKAGES
 	DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_SOURCES
 	DISTRIBUTION_PACKAGE_FORMATS 		7Z
-	# Runtime packages do not exist for header only libraries
+	# Runtime packages do not exist for header only libraries.
+	# Uncommenting this should yield a descriptive error.
 	# DISTRIBUTION_PACKAGES
 	# DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_RUNTIME
 	# DISTRIBUTION_PACKAGE_FORMATS 		7Z

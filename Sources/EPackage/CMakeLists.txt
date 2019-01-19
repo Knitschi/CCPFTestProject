@@ -40,14 +40,14 @@ set( archiveDevPackageOptions
 
 ############################################## Add Package #################################
 cpfAddCppPackage( 
-	PACKAGE_NAMESPACE							e
-	TYPE										INTERFACE_LIB
-	BRIEF_DESCRIPTION							${briefDescription}
-	LONG_DESCRIPTION							${longDescription}
-	PUBLIC_HEADER								${PACKAGE_PUBLIC_HEADER}
-	PUBLIC_FIXTURE_HEADER						${PACKAGE_PUBLIC_FIXTURE_HEADER}
-	FIXTURE_FILES								${PACKAGE_FIXTURE_FILES}
-	TEST_FILES									${PACKAGE_TEST_FILES}
+	PACKAGE_NAMESPACE								e
+	TYPE											INTERFACE_LIB
+	BRIEF_DESCRIPTION								${briefDescription}
+	LONG_DESCRIPTION								${longDescription}
+	PUBLIC_HEADER									${PACKAGE_PUBLIC_HEADER}
+	PUBLIC_FIXTURE_HEADER							${PACKAGE_PUBLIC_FIXTURE_HEADER}
+	FIXTURE_FILES									${PACKAGE_FIXTURE_FILES}
+	TEST_FILES										${PACKAGE_TEST_FILES}
 	${archiveDevPackageOptions}
-	ENABLE_ABI_API_COMPATIBILITY_CHECK_TARGETS 	FALSE
+	ENABLE_ABI_API_COMPATIBILITY_REPORT_TARGETS 	FALSE
 )

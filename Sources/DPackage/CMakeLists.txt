@@ -20,11 +20,11 @@ set(BUILD_SHARED_LIBS ON)
 
 ############################################## Add Package #################################
 cpfAddCppPackage( 
-	PACKAGE_NAMESPACE							d
-	TYPE										LIB
-	BRIEF_DESCRIPTION							${briefDescription}
-	LONG_DESCRIPTION							${longDescription}
-	PUBLIC_HEADER								${PACKAGE_PUBLIC_HEADER}
-	PRODUCTION_FILES							${PACKAGE_PRODUCTION_FILES}
-	ENABLE_ABI_API_COMPATIBILITY_CHECK_TARGETS 	FALSE
+	PACKAGE_NAMESPACE								d
+	TYPE											LIB
+	BRIEF_DESCRIPTION								${briefDescription}
+	LONG_DESCRIPTION								${longDescription}
+	PUBLIC_HEADER									${PACKAGE_PUBLIC_HEADER}
+	PRODUCTION_FILES								${PACKAGE_PRODUCTION_FILES}
+	ENABLE_ABI_API_COMPATIBILITY_REPORT_TARGETS 	FALSE
 )

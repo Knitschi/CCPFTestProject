@@ -2,7 +2,5 @@
 
 namespace c
 {
-    void function()
-    {
-    }
+	void function() {}
 }

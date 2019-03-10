@@ -3,9 +3,9 @@
 
 namespace e
 {
-    class E_TESTS_EXPORT MyFixture
-    {
-    public:
-        void setUp();
-    };
+	class E_TESTS_EXPORT MyFixture
+	{
+	  public:
+		void setUp();
+	};
 }

@@ -3,10 +3,10 @@
 
 int main(int, char**)
 {
-    e::MyFixture f;
-    f.setUp();
-    
-    e::function();
+	e::MyFixture f;
+	f.setUp();
 
-    return 0;
+	e::function();
+
+	return 0;
 }

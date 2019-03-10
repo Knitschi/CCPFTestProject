@@ -2,8 +2,5 @@
 
 namespace e
 {
-    inline void function()
-    {
-    }
+	inline void function() {}
 }
-

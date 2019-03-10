@@ -1,9 +1,9 @@
-#include <APackage/function.h>
 #include <APackage/Tests/fixture.h>
+#include <APackage/function.h>
 
 int main()
 {
-    a::fixture();
-    a::function();
-    return 0;
+	a::fixture();
+	a::function();
+	return 0;
 }

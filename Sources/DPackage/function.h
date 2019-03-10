@@ -4,6 +4,5 @@
 
 namespace d
 {
-    D_EXPORT void function();
+	D_EXPORT void function();
 }
-

@@ -4,5 +4,5 @@
 
 namespace b
 {
-    B_TESTS_EXPORT void fixture();
+	B_TESTS_EXPORT void fixture();
 }

@@ -4,5 +4,5 @@
 
 namespace a
 {
-    A_EXPORT void function();
+	A_EXPORT void function();
 }

@@ -2,7 +2,5 @@
 
 namespace d
 {
-    void function()
-    {
-    }
+	void function() {}
 }

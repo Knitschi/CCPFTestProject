@@ -2,8 +2,5 @@
 
 namespace b
 {
-    void fixture()
-    {
-        
-    }
+	void fixture() {}
 }

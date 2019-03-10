@@ -4,6 +4,5 @@
 
 namespace c
 {
-    C_EXPORT void function();
+	C_EXPORT void function();
 }
-

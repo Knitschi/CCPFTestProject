@@ -2,8 +2,5 @@
 
 namespace a
 {
-    void fixture()
-    {
-        
-    }
+	void fixture() {}
 }

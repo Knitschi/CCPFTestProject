@@ -2,6 +2,8 @@
 
 This project is used by the automated tests of the [CMakeProjectFramework](https://github.com/Knitschi/CMakeProjectFramework).
 
+For more information about this example read the [project documentation](https://knitschi.github.io/CCPFTestProject/LastBuild/documentation/doc/doxygen/html/index.html).
+
 This Project is mainly used for testing the contents of the distribution packages.
 
 APackage is an executable package.

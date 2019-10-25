@@ -1,6 +1,6 @@
 # Root CMakeLists file for the CCPFTestProject
 
-include("CPFCMake/cpfInit.cmake")
+include("CPFCMake/cpfInitCIProject.cmake")
 cmake_minimum_required(VERSION ${CPF_MINIMUM_CMAKE_VERSION}) 
 
 # Make sure a precompiled header is used.

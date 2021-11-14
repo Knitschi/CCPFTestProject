@@ -1,8 +1,5 @@
 
-include(cpfInitPackageProject)
-include(cpfAddCppPackage)
-
-cpfInitPackageProject()
+include(cpfAddCppPackageComponent)
 
 set( briefDescription "A C++ interface libary used for testing the CPF" )
 set( longDescription "This package is used to test the distribution packages of an interface library." )
@@ -24,23 +21,8 @@ set( PACKAGE_TEST_FILES
 	Tests/tests_main.cpp
 )
 
-set( archiveDevPackageOptions
-	DISTRIBUTION_PACKAGES 						
-	DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_DEVELOPER
-	DISTRIBUTION_PACKAGE_FORMATS 		7Z
-	DISTRIBUTION_PACKAGES
-	DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_SOURCES
-	DISTRIBUTION_PACKAGE_FORMATS 		7Z
-	# Runtime packages do not exist for header only libraries.
-	# Uncommenting this should yield a descriptive error.
-	# DISTRIBUTION_PACKAGES
-	# DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_RUNTIME
-	# DISTRIBUTION_PACKAGE_FORMATS 		7Z
-)
-
 ############################################## Add Package #################################
-cpfAddCppPackage( 
-	PACKAGE_NAMESPACE								e
+cpfAddCppPackageComponent( 
 	TYPE											INTERFACE_LIB
 	BRIEF_DESCRIPTION								${briefDescription}
 	LONG_DESCRIPTION								${longDescription}
@@ -48,6 +30,5 @@ cpfAddCppPackage(
 	PUBLIC_FIXTURE_HEADER							${PACKAGE_PUBLIC_FIXTURE_HEADER}
 	FIXTURE_FILES									${PACKAGE_FIXTURE_FILES}
 	TEST_FILES										${PACKAGE_TEST_FILES}
-	${archiveDevPackageOptions}
 	ENABLE_ABI_API_COMPATIBILITY_REPORT_TARGETS 	FALSE
 )

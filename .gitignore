@@ -7,3 +7,6 @@ Configuration
 2_Generate.py
 3_Make.py
 /install
+/2_GetDependencies.py
+/3_Generate.py
+/4_Make.py

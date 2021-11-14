@@ -1,12 +1,8 @@
 
-include(cpfInitPackageProject)
-include(cpfAddCppPackage)
-
-cpfInitPackageProject()
+include(cpfAddCppPackageComponent)
 
 set( briefDescription "A C++ libary used for testing the CPF" )
 set( longDescription "This tests if we can have projects with mixed static and shared linkage." )
-
 
 set( PACKAGE_PUBLIC_HEADER
 	function.h
@@ -19,8 +15,7 @@ set( PACKAGE_PRODUCTION_FILES
 set(BUILD_SHARED_LIBS ON)
 
 ############################################## Add Package #################################
-cpfAddCppPackage( 
-	PACKAGE_NAMESPACE								d
+cpfAddCppPackageComponent( 
 	TYPE											LIB
 	BRIEF_DESCRIPTION								${briefDescription}
 	LONG_DESCRIPTION								${longDescription}

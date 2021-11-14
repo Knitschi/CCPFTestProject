@@ -1,12 +1,8 @@
 
-include(cpfInitPackageProject)
-include(cpfAddCppPackage)
-
-cpfInitPackageProject()
+include(cpfAddCppPackageComponent)
 
 set( briefDescription "An empty C++ command line application used for testing the CPF." )
 set( longDescription "A long description of the APackage." )
-
 
 ############################################## Define code files ###################################################
 
@@ -40,34 +36,18 @@ set( PACKAGE_TEST_FILES
 
 # names of the libraries that are linked to this target
 set(PACKAGE_LINKED_LIBRARIES
-	BPackage
-	CPackage
-	EPackage
-)
-
-set( distPackageOptions
-	DISTRIBUTION_PACKAGES
-		DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_RUNTIME
-		DISTRIBUTION_PACKAGE_FORMATS 		7Z ZIP TGZ
-	DISTRIBUTION_PACKAGES
-		DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_RUNTIME_PORTABLE CPackage
-		DISTRIBUTION_PACKAGE_FORMATS 		7Z
-	DISTRIBUTION_PACKAGES
-		DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_DEVELOPER
-		DISTRIBUTION_PACKAGE_FORMATS 		7Z
-	DISTRIBUTION_PACKAGES
-		DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_SOURCES
-		DISTRIBUTION_PACKAGE_FORMATS 		7Z
+	CCPFTestPackage::BPackage
+	CCPFTestPackage::CPackage
+	CCPFTestPackage::EPackage
 )
 
 set( pluginOptions 
 	PLUGIN
-		PLUGIN_DIRECTORY plugins PLUGIN_TARGETS DPackage
+		PLUGIN_DIRECTORY plugins PLUGIN_TARGETS CCPFTestPackage::DPackage
 )
 
 ############################################## Add Package #################################
-cpfAddCppPackage( 
-	PACKAGE_NAMESPACE							a
+cpfAddCppPackageComponent( 
 	TYPE										CONSOLE_APP
 	BRIEF_DESCRIPTION							${briefDescription}
 	LONG_DESCRIPTION							${longDescription}
@@ -79,5 +59,4 @@ cpfAddCppPackage(
 	LINKED_LIBRARIES							${PACKAGE_LINKED_LIBRARIES}
 	PLUGIN_DEPENDENCIES 						${pluginOptions}
 	ENABLE_ABI_API_COMPATIBILITY_REPORT_TARGETS 	FALSE
-	${distPackageOptions}
 )

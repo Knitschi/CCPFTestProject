@@ -1,14 +1,11 @@
 
-include(cpfInitPackageProject)
-include(cpfAddDoxygenPackage)
-
-cpfInitPackageProject()
+include(cpfAddDoxygenPackageComponent)
 
 set( sources
     CCPFTestProjectDocs.dox
 )
 
-cpfAddDoxygenPackage(
+cpfAddDoxygenPackageComponent(
     SOURCES ${sources}
     DOXYGEN_CONFIG_FILE "${CMAKE_CURRENT_SOURCE_DIR}/DoxygenConfig.txt"
     DOXYGEN_LAYOUT_FILE "${CMAKE_CURRENT_SOURCE_DIR}/DoxygenLayout.xml"

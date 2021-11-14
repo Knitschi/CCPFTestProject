@@ -1,8 +1,5 @@
 
-include(cpfInitPackageProject)
-include(cpfAddCppPackage)
-
-cpfInitPackageProject()
+include(cpfAddCppPackageComponent)
 
 set( briefDescription "A C++ libary used for testing the CPF" )
 set( longDescription "A long description of the BPackage." )
@@ -28,24 +25,8 @@ set( PACKAGE_TEST_FILES
 	Tests/tests_main.cpp
 )
 
-set( distPackageOptions
-	DISTRIBUTION_PACKAGES
-		DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_RUNTIME
-		DISTRIBUTION_PACKAGE_FORMATS 		7Z
-	DISTRIBUTION_PACKAGES
-		DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_RUNTIME_PORTABLE
-		DISTRIBUTION_PACKAGE_FORMATS 		7Z
-	DISTRIBUTION_PACKAGES
-		DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_DEVELOPER
-		DISTRIBUTION_PACKAGE_FORMATS 		7Z
-	DISTRIBUTION_PACKAGES
-		DISTRIBUTION_PACKAGE_CONTENT_TYPE 	CT_SOURCES
-		DISTRIBUTION_PACKAGE_FORMATS 		7Z
-)
-
 ############################################## Add Package #################################
-cpfAddCppPackage( 
-	PACKAGE_NAMESPACE		b
+cpfAddCppPackageComponent( 
 	TYPE					LIB
 	BRIEF_DESCRIPTION		${briefDescription}
 	LONG_DESCRIPTION		${longDescription}
@@ -54,5 +35,4 @@ cpfAddCppPackage(
 	PUBLIC_FIXTURE_HEADER	${PACKAGE_PUBLIC_FIXTURE_HEADER}
 	FIXTURE_FILES			${PACKAGE_FIXTURE_FILES}
 	TEST_FILES				${PACKAGE_TEST_FILES}
-	${distPackageOptions}
 )

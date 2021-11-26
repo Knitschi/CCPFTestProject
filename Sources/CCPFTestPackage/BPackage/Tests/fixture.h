@@ -1,8 +1,8 @@
 #pragma once
 
-#include <BPackage/b_tests_export.h>
+#include <BPackage/bpackage_fixtures_export.h>
 
 namespace b
 {
-	B_TESTS_EXPORT void fixture();
+	BPACKAGE_FIXTURES_EXPORT void fixture();
 }

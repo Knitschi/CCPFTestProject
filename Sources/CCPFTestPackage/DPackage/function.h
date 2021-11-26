@@ -1,8 +1,8 @@
 #pragma once
 
-#include <DPackage/d_export.h>
+#include <DPackage/dpackage_export.h>
 
 namespace d
 {
-	D_EXPORT void function();
+	DPACKAGE_EXPORT void function();
 }

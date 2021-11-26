@@ -1,8 +1,8 @@
 #pragma once
 
-#include <BPackage/b_export.h>
+#include <BPackage/bpackage_export.h>
 
 namespace b
 {
-	B_EXPORT void function();
+	BPACKAGE_EXPORT void function();
 }

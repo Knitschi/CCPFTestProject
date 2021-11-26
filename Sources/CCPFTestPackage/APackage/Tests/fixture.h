@@ -1,8 +1,8 @@
 #pragma once
 
-#include <APackage/a_tests_export.h>
+#include <APackage/libapackage_fixtures_export.h>
 
 namespace a
 {
-	A_TESTS_EXPORT void fixture();
+	LIBAPACKAGE_FIXTURES_EXPORT void fixture();
 }

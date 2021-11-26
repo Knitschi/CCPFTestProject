@@ -1,8 +1,8 @@
 #pragma once
 
-#include <APackage/a_export.h>
+#include <APackage/libapackage_export.h>
 
 namespace a
 {
-	A_EXPORT void function();
+	LIBAPACKAGE_EXPORT void function();
 }

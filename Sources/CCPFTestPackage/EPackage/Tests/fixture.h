@@ -1,9 +1,9 @@
-#include <EPackage/e_tests_export.h>
+#include <EPackage/epackage_fixtures_export.h>
 
 
 namespace e
 {
-	class E_TESTS_EXPORT MyFixture
+	class EPACKAGE_FIXTURES_EXPORT MyFixture
 	{
 	  public:
 		void setUp();

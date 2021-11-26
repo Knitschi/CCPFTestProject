@@ -1,8 +1,8 @@
 #pragma once
 
-#include <CPackage/c_export.h>
+#include <CPackage/cpackage_export.h>
 
 namespace c
 {
-	C_EXPORT void function();
+	CPACKAGE_EXPORT void function();
 }

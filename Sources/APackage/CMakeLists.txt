@@ -1,7 +1,7 @@
 
 
 cpfPackageProject(
-	TARGET_NAMESPACE CCPFTestPackage
+	TARGET_NAMESPACE A
     BRIEF DESCRIPTION "Provides the top level APackage consumer and the documentation package."
     LONG_DESCRIPTION ""
     COMPONENTS 

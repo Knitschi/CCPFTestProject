@@ -2,7 +2,7 @@
 include(cpfAddCppPackageComponent)
 
 cpfPackageProject(
-	TARGET_NAMESPACE CCPFTestPackage
+	TARGET_NAMESPACE C
     BRIEF DESCRIPTION "Used for testing package archives for components of type LIB."
     LONG_DESCRIPTION "CPackage long description."
     COMPONENTS SINGLE_COMPONENT

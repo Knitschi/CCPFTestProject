@@ -1,8 +1,12 @@
 
 include(cpfAddCppPackageComponent)
 
-set( briefDescription "An empty C++ command line application used for testing the CPF." )
-set( longDescription "A long description of the APackage." )
+set( briefDescription "An empty C++ command line application that depends on the other packages." )
+set( longDescription "\
+This tests the following:
+* The options for including runtime dependencies of external components in the package archives. This can be plugin dependencies or directly linked libraries.
+* Package archives contain generated source files.
+" )
 
 ############################################## Define code files ###################################################
 
@@ -36,14 +40,14 @@ set( PACKAGE_TEST_FILES
 
 # names of the libraries that are linked to this target
 set(PACKAGE_LINKED_LIBRARIES
-	CCPFTestPackage::BPackage
-	CCPFTestPackage::CPackage
-	CCPFTestPackage::EPackage
+	B::BPackage
+	C::CPackage
+	E::EPackage
 )
 
 set( pluginOptions 
 	PLUGIN
-		PLUGIN_DIRECTORY plugins PLUGIN_TARGETS CCPFTestPackage::DPackage
+		PLUGIN_DIRECTORY plugins PLUGIN_TARGETS D::DPackage
 )
 
 ############################################## Add Package #################################

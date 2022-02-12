@@ -1,0 +1,42 @@
+
+include(cpfAddCppPackageComponent)
+
+cpfPackageProject(
+	TARGET_NAMESPACE CCPFTestPackage
+    BRIEF DESCRIPTION "Used for testing package archives for components of type LIB."
+    LONG_DESCRIPTION "CPackage long description."
+    COMPONENTS SINGLE_COMPONENT
+	PACKAGE_ARCHIVES
+		PACKAGE_ARCHIVE_CONTENT_TYPE 	CT_RUNTIME
+		PACKAGE_ARCHIVE_FORMATS 		7Z ZIP TGZ
+	PACKAGE_ARCHIVES
+		PACKAGE_ARCHIVE_CONTENT_TYPE 	CT_RUNTIME_PORTABLE CPackage
+		PACKAGE_ARCHIVE_FORMATS 		7Z
+	PACKAGE_ARCHIVES
+		PACKAGE_ARCHIVE_CONTENT_TYPE 	CT_DEVELOPER
+		PACKAGE_ARCHIVE_FORMATS 		7Z
+	PACKAGE_ARCHIVES
+		PACKAGE_ARCHIVE_CONTENT_TYPE 	CT_SOURCES
+		PACKAGE_ARCHIVE_FORMATS 		7Z
+)
+
+set( PACKAGE_PUBLIC_HEADER
+	function.h
+)
+
+set( PACKAGE_PRODUCTION_FILES
+	function.cpp
+)
+
+
+############################################## Add Package #################################
+cpfAddCppPackageComponent( 
+	TYPE										LIB
+	BRIEF_DESCRIPTION							${briefDescription}
+	LONG_DESCRIPTION							${longDescription}
+	PUBLIC_HEADER								${PACKAGE_PUBLIC_HEADER}
+	PRODUCTION_FILES							${PACKAGE_PRODUCTION_FILES}
+	ENABLE_ABI_API_COMPATIBILITY_REPORT_TARGETS 	FALSE
+)
+
+cpfFinalizePackageProject()

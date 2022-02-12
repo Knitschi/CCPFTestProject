@@ -3,5 +3,9 @@ set( CPF_PACKAGES
     EXTERNAL CPFCMake
     EXTERNAL CPFBuildscripts
     EXTERNAL CIBuildConfigurations
-    OWNED CCPFTestPackage
+	OWNED EPackage
+	OWNED DPackage
+	OWNED CPackage
+	OWNED BPackage
+	OWNED APackage
 )

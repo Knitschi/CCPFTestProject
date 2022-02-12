@@ -1,9 +1,24 @@
 
 include(cpfAddCppPackageComponent)
 
-set( briefDescription "A C++ interface libary used for testing the CPF" )
-set( longDescription "This package is used to test the distribution packages of an interface library." )
-
+cpfPackageProject(
+	TARGET_NAMESPACE CCPFTestPackage
+    BRIEF DESCRIPTION "Used for testing package archives for components of type INTERFACE_LIB."
+    LONG_DESCRIPTION "EPackage long description."
+    COMPONENTS SINGLE_COMPONENT
+	PACKAGE_ARCHIVES
+		PACKAGE_ARCHIVE_CONTENT_TYPE 	CT_RUNTIME
+		PACKAGE_ARCHIVE_FORMATS 		7Z ZIP TGZ
+	PACKAGE_ARCHIVES
+		PACKAGE_ARCHIVE_CONTENT_TYPE 	CT_RUNTIME_PORTABLE CPackage
+		PACKAGE_ARCHIVE_FORMATS 		7Z
+	PACKAGE_ARCHIVES
+		PACKAGE_ARCHIVE_CONTENT_TYPE 	CT_DEVELOPER
+		PACKAGE_ARCHIVE_FORMATS 		7Z
+	PACKAGE_ARCHIVES
+		PACKAGE_ARCHIVE_CONTENT_TYPE 	CT_SOURCES
+		PACKAGE_ARCHIVE_FORMATS 		7Z
+)
 
 set( PACKAGE_PUBLIC_HEADER
 	function.h
@@ -32,3 +47,5 @@ cpfAddCppPackageComponent(
 	TEST_FILES										${PACKAGE_TEST_FILES}
 	ENABLE_ABI_API_COMPATIBILITY_REPORT_TARGETS 	FALSE
 )
+
+cpfFinalizePackageProject()

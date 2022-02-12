@@ -2,13 +2,9 @@
 
 cpfPackageProject(
 	TARGET_NAMESPACE CCPFTestPackage
-    BRIEF DESCRIPTION "A collection of test package-components"
+    BRIEF DESCRIPTION "Provides the top level APackage consumer and the documentation package."
     LONG_DESCRIPTION ""
     COMPONENTS 
-        EPackage
-        DPackage
-        CPackage
-        BPackage
         APackage
         documentation
 	PACKAGE_ARCHIVES

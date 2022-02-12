@@ -53,6 +53,7 @@ set( pluginOptions
 ############################################## Add Package #################################
 cpfAddCppPackageComponent( 
 	TYPE										CONSOLE_APP
+	CPP_NAMESPACE								a
 	BRIEF_DESCRIPTION							${briefDescription}
 	LONG_DESCRIPTION							${longDescription}
 	PUBLIC_HEADER								${PACKAGE_PUBLIC_HEADER}

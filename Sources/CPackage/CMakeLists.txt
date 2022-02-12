@@ -3,7 +3,7 @@ include(cpfAddCppPackageComponent)
 
 cpfPackageProject(
 	TARGET_NAMESPACE C
-    BRIEF DESCRIPTION "Used for testing package archives for components of type LIB."
+    BRIEF DESCRIPTION "Serves as a runtime dependency in the APackage package archive."
     LONG_DESCRIPTION "CPackage long description."
     COMPONENTS SINGLE_COMPONENT
 )

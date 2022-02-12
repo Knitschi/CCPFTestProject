@@ -3,8 +3,7 @@ include(cpfAddCppPackageComponent)
 
 cpfPackageProject(
 	TARGET_NAMESPACE D
-    BRIEF DESCRIPTION "Used for testing package archives for components of type LIB but is fixed to be a shared library because it is used as a plubin dependency.\
-It is not actuallyloaded during runtime though."
+    BRIEF DESCRIPTION "Serves as a dummy plugin dependency for the package archive in APackage."
     LONG_DESCRIPTION "DPackage long description."
 	COMPONENTS SINGLE_COMPONENT
 )
